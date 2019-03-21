@@ -17,34 +17,12 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList: [{
-        id: '001',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1809/bf/bf2928e78e339573a3.img.jpg_200x200_87267e0a.jpg',
-        title: '横店梦幻谷',
-        desc: '横店梦幻谷'
-      }, {
-        id: '002',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1809/bf/bf2928e78e339573a3.img.jpg_200x200_87267e0a.jpg',
-        title: '横店梦幻谷',
-        desc: '横店梦幻谷'
-      }, {
-        id: '003',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1809/bf/bf2928e78e339573a3.img.jpg_200x200_87267e0a.jpg',
-        title: '横店梦幻谷',
-        desc: '横店梦幻谷'
-      }, {
-        id: '004',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1809/bf/bf2928e78e339573a3.img.jpg_200x200_87267e0a.jpg',
-        title: '横店梦幻谷',
-        desc: '横店梦幻谷'
-      }, {
-        id: '005',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1809/bf/bf2928e78e339573a3.img.jpg_200x200_87267e0a.jpg',
-        title: '横店梦幻谷',
-        desc: '横店梦幻谷'
-      }]
+  props: {
+    list: Array
+  },
+  computed: {
+    recommendList () {
+      return this.list
     }
   }
 }
