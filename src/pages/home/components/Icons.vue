@@ -22,7 +22,6 @@ export default {
   data () {
     return {
       swiperOption: {
-        pagination: '.swiper-pagination'
       },
       iconList: [{
         id: 1001,
@@ -83,6 +82,8 @@ export default {
 .wrapper >>> .swiper-container
   height: 0
   padding-bottom: 50%
+.wrapper
+  margin-top .2rem
 .icon
   overflow: hidden
   float: left
@@ -108,5 +109,6 @@ export default {
     bottom: 0
     height: 0.44rem
     line-height: 0.44rem
+    text-align center
     ellipsis()
 </style>
