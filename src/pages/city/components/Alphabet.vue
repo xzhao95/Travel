@@ -1,8 +1,8 @@
 <template>
   <ul class="list">
-      <li 
-        class="item" 
-        v-for="item of letters" 
+      <li
+        class="item"
+        v-for="item of letters"
         :key="item"
         :ref="item"
         @click="handleLetterClick"
@@ -32,9 +32,9 @@ export default {
     this.startY = this.$refs['A'][0].offsetTop
   },
   computed: {
-    letters() {
+    letters () {
       const letters = []
-      for(let i in this.cities) {
+      for (let i in this.cities) {
         letters.push(i)
       }
       return letters
@@ -50,7 +50,7 @@ export default {
     },
     handleTouchMove (e) {
       if (this.touchStatus) {
-        if(this.timer) {
+        if (this.timer) {
           clearTimeout(this.timer)
         }
         this.timer = setTimeout(() => {
